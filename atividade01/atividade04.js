@@ -7,8 +7,8 @@ let valorProduto = 1000;
 let total = 0;
 let valorParcela = 0;
 
-let parcelas = [3, 5, 8];
-let juros = [0.10, 0.20, 0.30];
+let parcelas = [3, 5];
+let juros = [0.10, 0.20];
 
 for (let index = 0; index < parcelas.length; index++) {
 

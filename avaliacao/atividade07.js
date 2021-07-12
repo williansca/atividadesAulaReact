@@ -8,4 +8,4 @@ const fibonacci = (num) => {
   };
 
 
-console.log(numbers.fibonacci());
+console.log();
