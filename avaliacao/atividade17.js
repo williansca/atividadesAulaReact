@@ -1,8 +1,6 @@
 // 16 - Crie um programa que solicite um número inteiro X. Gere X números aleatórios entre 0 e 100. Após isso apresente o menor número, o maior número e a média dos números gerados.
 
-let numero = 10;
 let array = [];
-let result = 0;
 let total = 0;
 let maior = 0;
 let menor = 110;
