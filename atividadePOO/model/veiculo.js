@@ -18,7 +18,7 @@ class Veiculo {
         this.marca = marca;
         this.placa = placa;
         this.ano = ano;
-    }
+    };
 };
 
 // let veiculo = new Veiculo(`Creta`, `Hyndai`, `BR12290`, 2021);
