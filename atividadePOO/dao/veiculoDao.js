@@ -3,24 +3,22 @@ let veiculos = [];
 function cadastrarVeiculo() {
     let modelo = window.prompt(`Modelo`);
     let marca = window.prompt(`Marca`);
-    let placaTeste = window.prompt(`Placa`);
+    let placa = window.prompt(`Placa`);
+    cadastroPlaca(placa);
     let ano = window.prompt(`Ano`);
 
     //let veiculo = new Veiculo(modelo, marca, placa, ano);
-    veiculos.push(new Veiculo(modelo, marca, placaTeste, ano));
+    veiculos.push(new Veiculo(modelo, marca, ano));
 };
 
 //funcao abaixo verifica se placa digitada ja existe
-function cadastroPlaca(placaTeste) {
-    let placa = null;
+function cadastroPlaca(placa) {
+    let placa2 = null;
     veiculos.forEach(veiculo => {
-        while (veiculo.placa == placaTeste) {
-            placa = window.prompt(`Placa ja cadastrada, digite outra placa: `);
-            if (placa != placaTeste) {
-                placaTeste = placa;
-            }
+        while (veiculo.placa == placa) {
+            placa2 = window.prompt(`Placa ja cadastrada, digite outra placa: `);
         }
-        return placaTeste;
+        return placa;
 
     });
 }
