@@ -29,10 +29,10 @@ function executarSistema() {
 
 function showMenu() {
     return window.prompt(`
-    (1) - Subir;
-    (2) - Descer;
-    (3) - Sair;
-    (4) - Entrar;
+    (1) - Subir andar;
+    (2) - Descer andar;
+    (3) - Sair uma pessoa;
+    (4) - Entrar uma pessoa;
 `)
 };
 

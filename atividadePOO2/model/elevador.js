@@ -9,32 +9,26 @@ class Elevador {
 
     subir() {
         console.log(`Elevador no andar ${this.andar}`);
-        if (this.qtdPessoas == 0) {
-            return window.alert(`Elevador não funciona sem pessoas`);
+        if (this.andar >= this.andarMaximo) {
+            return window.alert("Chegou no andar maximo");;
         } else {
-            if (this.andar >= this.andarMaximo) {
-                return window.alert("Chegou no andar maximo");;
-            } else {
-                this.andar++;
-                console.log(`Elevador no andar ${this.andar}`);
-                return window.alert(`O Elevador subiu para o andar ${this.andar}`);
-            }
+            this.andar++;
+            console.log(`Elevador no andar ${this.andar}`);
+            return window.alert(`O Elevador subiu para o andar ${this.andar}`);
         }
+
     };
 
     descer() {
         console.log(`Elevador no andar ${this.andar}`);
-        if (this.qtdPessoas == 0) {
-            return window.alert(`Elevador não funciona sem pessoas`);
+        if (this.andar == this.terreo) {
+            return window.alert("Elevador no andar Térreo");
         } else {
-            if (this.andar == this.terreo) {
-                return window.alert("Elevador no andar Térreo");
-            } else {
-                this.andar--;
-                console.log(`Elevador no andar ${this.andar}`);
-                return window.alert(`O Elevador desceu para o andar ${this.andar}`);
-            }
+            this.andar--;
+            console.log(`Elevador no andar ${this.andar}`);
+            return window.alert(`O Elevador desceu para o andar ${this.andar}`);
         }
+
     };
 
     sair() {
